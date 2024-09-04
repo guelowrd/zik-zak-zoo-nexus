@@ -1,0 +1,2 @@
+```cargo run -r``` to run the program and play a round of ZiK-ZaK-ZoO (follow the CLI instructions).
+At the end of a round, proof generation kicks off [TODO: figure out why it stays stale and never ends].
