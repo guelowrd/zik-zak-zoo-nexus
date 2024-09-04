@@ -226,12 +226,11 @@ fn main() {
 
     let input = format_seed_and_moves(game_round.seed, &game_round.player_moves);
 
-
-    print!("Proving execution of vm...");
+    println!("Proving execution of vm...");
     let proof = prover
         .prove_with_input::<Input>(&pp, &input)
         .expect("failed to prove program");
- 
+    println!("Try and get output...");
     let output = proof.output::<Output>().expect("failed to deserialize output");
     
     println!(
